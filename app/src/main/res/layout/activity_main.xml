@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lin1"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true">
+
+    <EditText
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/num1"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="X" />
+
+
+    <EditText
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/num2"
+        android:layout_weight="1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="=" />
+    <EditText
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/num3"
+        android:layout_weight="1" />
+
+</LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="정답 확인"
+        android:id="@+id/resultBtn"
+        android:layout_below="@id/lin1"
+        android:layout_marginLeft="5dp"
+        android:layout_alignRight="@+id/lin1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="난수 생성"
+        android:id="@+id/rendomBtn"
+        android:layout_below="@+id/lin1"
+        android:layout_toLeftOf="@+id/resultBtn" />
+    
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultBtn"
+        android:id="@+id/list1" />
+
+</RelativeLayout>
